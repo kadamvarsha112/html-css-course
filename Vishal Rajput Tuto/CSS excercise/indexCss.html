@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Excercise</title>
+
+    <style>
+        p {
+            color: grey;
+            background-image: radial-gradient(circle, #ff0000, #0000ff);
+        }
+
+        a {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        a:active {
+            color: yellow;
+        }
+
+        a:visited {
+            color: black;
+        }
+
+        .container {
+            background-color: lightblue;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(3, 1fr);
+            justify-content: space-evenly;
+        }
+
+        .item1,
+        .item2,
+        .item3,
+        .item4,
+        .item5 {
+            background-color: pink;
+            margin: 5px;
+        }
+
+        .item4{
+            grid-area: 2 / 2 /span 4 /span 2;
+        }
+
+
+        .container2{
+            margin-top: 10px;
+            background-color: red;
+            height: 500px;
+
+            display: grid;
+            grid-template-areas: "header header header aside"
+            "article article article aside"
+            "footer footer footer aside";
+
+        }
+
+        .header{
+            grid-area: header;
+            background-color: yellow;
+        }
+
+        .article{
+            grid-area: article;
+            background-color: lightgreen;
+        }
+
+        .aside{
+            grid-area: aside;
+            background-color: lightsalmon;
+        }
+
+        .footer{
+            grid-area: footer;
+            background-color: lightseagreen;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae quidem ullam explicabo soluta adipisci, a magnam nostrum,
+</p>
+
+<a href="http://google.com" target="_blank">Google</a>
+
+commnt -->
+
+
+    <div class="container">
+        <div class="item1">item1</div>
+        <div class="item2">item2</div>
+        <div class="item3">item3</div>
+        <div class="item4">item4</div>
+        <div class="item5">item5</div>
+    </div>
+
+    <div class="container2">
+        <div class="header"></div>
+        <div class="article"></div>
+        <div class="aside"></div>
+        <div class="footer"></div>
+
+    </div>
+</body>
+
+</html>

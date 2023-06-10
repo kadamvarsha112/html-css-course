@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID EXERCISE</title>
+
+    <style>
+        @media (max-width: 480px) {
+            .container {
+                display: grid;
+                gap: 10px;
+                grid-template-areas:
+                    'header header header'
+                    'nav nav nav'
+                    'main main main'
+                    'main main main'
+                    'main main main'
+                    'main main main'
+                    'main main main'
+                    'main main main'
+                    'main main main'
+                    'main main main'
+                    'sidebar sidebar sidebar'
+                    'ads ads ads'
+                    'footer footer footer';
+            }
+        }
+
+        @media (min-width:481px) and (max-width: 1024px) {
+            .container {
+                display: grid;
+                gap: 10px;
+                grid-template-areas:
+                    'header header header'
+                    'nav nav nav'
+                    'sidebar main main'
+                    'sidebar main main'
+                    'sidebar main main'
+                    'sidebar main main'
+                    'sidebar main main'
+                    'sidebar main main'
+                    'sidebar main main'
+                    'sidebar main main'
+                    'sidebar main main'
+                    'sidebar main main'
+                    'ads footer footer';
+            }
+        }
+
+        @media (min-width:1025px) and (max-width: 1280px) {
+            .container {
+                display: grid;
+                gap: 10px;
+                grid-template-areas:
+                    'header header header'
+                    'sidebar nav ads'
+                    'sidebar main ads'
+                    'sidebar main ads'
+                    'sidebar main ads'
+                    'sidebar main ads'
+                    'sidebar main ads'
+                    'sidebar main ads'
+                    'sidebar main ads'
+                    'sidebar main ads'
+                    'sidebar main ads'
+                    'sidebar main ads'
+                    'footer footer footer';
+            }
+        }
+
+
+
+        .container>div {
+            border: 1px solid red;
+        }
+
+        .header {
+            grid-area: header;
+        }
+
+        .nav {
+            grid-area: nav;
+        }
+
+        .main {
+            grid-area: main;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+        }
+
+        .ads {
+            grid-area: ads;
+        }
+
+        .footer {
+            grid-area: footer;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Mobile Container</h2>
+    <div class="container">
+        <div class="header">Header</div>
+        <div class="nav">Navigation</div>
+        <div class="main">Main</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="ads">ads</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+
+</html>

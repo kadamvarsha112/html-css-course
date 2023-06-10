@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS TRANSITION / TRANSFORM PROPERTY</title>
+
+    <style>
+      .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        row-gap: 10px;
+      }
+
+      .item1,
+      .item2,
+      .item3 {
+        background-color: coral;
+        border: 1px solid black;
+        height: 200px;
+        width: 200px;
+        transition: width 2s, background-color 1s;
+        transition-timing-function: ease;
+      }
+
+      .item1:hover {
+        width: 300px;
+        background-color: lightgreen;
+      }
+
+      .item2 {
+        background-color: coral;
+        border: 1px solid black;
+        height: 200px;
+        width: 200px;
+        transition: width 2s, background-color 1s;
+        transition-timing-function: ease-in;
+      }
+
+      .item2:hover {
+        width: 300px;
+        background-color: lightgreen;
+      }
+
+      .item3 {
+        background-color: coral;
+        border: 1px solid black;
+        height: 200px;
+        width: 200px;
+        transition: width 2s, background-color 1s;
+        transition-timing-function: ease-out;
+      }
+
+      .item3:hover {
+        width: 300px;
+        background-color: lightgreen;
+      }
+
+
+      .item4 {
+        background-color: coral;
+        border: 1px solid black;
+        height: 200px;
+        width: 200px;
+       transition: width 2s ease-in;
+      }
+
+      .item4:hover {
+        width: 300px;
+        background-color: lightgreen;
+      }
+
+
+      .item5 {
+        background-color: coral;
+        border: 1px solid black;
+        height: 200px;
+        width: 200px;
+
+      }
+
+      .item5:hover
+      {
+        transform: rotateZ(45deg)
+      }
+
+    </style>
+  </head>
+  <body>
+    <h3>CSS TRANSITION</h3>
+    <div class="container">
+      <div class="item1">Item1</div>
+      <div class="item2">Item2</div>
+      <div class="item3">Item3</div>
+      <div class="item4">Item4</div>
+    </div>
+
+    <h3>CSS TRANSFORM</h3>
+    <div class="container">
+      <div class="item5">Item5</div>
+      <div class="item6">Item6</div>
+      <div class="item7">Item7</div>
+      <div class="item8">Item8</div>
+    </div>
+
+  </body>
+</html>

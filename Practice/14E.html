@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14E</title>
+
+    <style>
+        div,
+        button {
+            font-family: arial;
+        }
+
+        .header {
+            position: fixed;
+            height: 70px;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .left-section {
+            display: flex;
+            align-items: center;
+        }
+
+        .right-section {
+            display: flex;
+            align-items: center;
+            padding-right: 30px;
+        }
+
+        .sender-picture {
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            object-fit: cover;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+        .name {
+            font-weight: bold;
+        }
+
+        .add-friend-button {
+            background-color: rgb(24, 119, 242);
+            color: white;
+            font-weight: bold;
+            border: none;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 12px;
+            padding-right: 12px;
+            border-radius: 6px;
+            margin-right: 3px;
+        }
+
+        .message-button {
+            background-color: rgb(230, 230, 230);
+            border: none;
+            font-weight: bold;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 12px;
+            padding-right: 12px;
+            border-radius: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+
+        <div class="left-section">
+            <img class="sender-picture" src="cat1.jpg" alt="profile-img">
+            <div class="name">Oliver Cat</div>
+        </div>
+
+
+        <div class="right-section">
+            <button class="add-friend-button">Add Friend</button>
+            <button class="message-button">Message</button>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

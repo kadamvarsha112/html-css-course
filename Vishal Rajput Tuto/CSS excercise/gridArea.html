@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID AREA</title>
+
+
+    <style>
+        .container {
+            display: grid;
+
+            background-color: antiquewhite;
+
+            grid-template-areas:
+                'header header header '
+                'main  section  aside'
+                'article article aside'
+                'footer footer footer';
+        }
+
+
+
+
+        .main {
+            grid-area: main;
+            background-color: lightcoral;
+        }
+
+        .section {
+            grid-area: section;
+            background-color: lightgreen;
+        }
+
+        .article {
+            grid-area: article;
+            background-color: lightseagreen;
+        }
+
+        .aside {
+            grid-area: aside;
+            background-color: lightslategray;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: rgb(88, 170, 88);
+        }
+
+        .container>div {
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">This is my header</div>
+        <div class="main">main</div>
+        <div class="section">section</div>
+        <div class="article">article</div>
+        <div class="aside">aside</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+
+</html>

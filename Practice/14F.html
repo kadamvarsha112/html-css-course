@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>14F</title>
+
+    <style>
+        .sidebar1 {
+            background-color: rgb(33, 33, 33);
+            position: fixed;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            width: 80px;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+
+
+        .sidebar2 {
+            background-color: rgb(55, 55, 55);
+            position: fixed;
+            top: 0;
+            left: 80px;
+            bottom: 0;
+            padding-top: 10px;
+            padding-right: 10px;
+            padding-left: 10px;
+
+        }
+
+        .sender-picture {
+            width: 60px;
+            height: 60px;
+            border-radius: 100%;
+            object-fit: cover;
+            padding-bottom: 5px;
+        }
+
+        .header {
+            display: flex;
+        }
+
+        .row{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .channel {
+            color: rgb(150, 150, 150);
+            margin-bottom: 16px;
+        }
+
+
+        .name {
+            color: white;
+            font-size: 14px;
+        }
+
+        .create-new {
+            color: rgb(150, 150, 150);
+            font-size: 25px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sidebar1">
+
+        <img class="sender-picture" src="cat1.jpg" alt="profile-img">
+        <img class="sender-picture" src="cat2.jpg" alt="profile-img">
+        <img class="sender-picture" src="cat3.jpg" alt="profile-img">
+
+    </div>
+    <div class="sidebar2">
+        <div class="row">
+            <div class="name">INFO</div>
+            <div class="create-new">+</div>
+        </div>
+
+        <div class="channel"># new-videos</div>
+        <div class="channel"># updates</div>
+        <div class="channel"># faq</div>
+    </div>
+</body>
+
+</html>
